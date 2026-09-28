@@ -1,80 +1,809 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Construcciones BZ | Fachadas y Rehabilitación</title>
-<meta name="description" content="Construcciones BZ. Especialistas en fachadas, SATE, rehabilitación, fachadas ventiladas, monocapa y obra nueva. Más de 22 años de experiencia.">
-<style>
-:root{--bg:#11151a;--gold:#c9aa61;--gold2:#e0c77e;--white:#f8f8f5;--muted:#b9bdc1;--card:#191e24}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#17191c}
-header{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(17,21,26,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,170,97,.18)}
-.nav{max-width:1180px;margin:auto;padding:10px 22px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-weight:800}.brand img{width:50px;height:50px;object-fit:cover;border-radius:50%}.brand span{font-size:16px;letter-spacing:1.5px}.brand b{color:var(--gold)}
-nav a{color:#fff;text-decoration:none;margin-left:24px;font-size:14px}nav a:hover{color:var(--gold2)}
-.hero{min-height:100vh;padding:150px 22px 90px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(9,12,15,.95),rgba(9,12,15,.55)),url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=90") center/cover}
-.hero-inner{max-width:1180px;width:100%;margin:auto}.tag{display:inline-block;color:var(--gold2);border:1px solid rgba(224,199,126,.45);padding:8px 13px;border-radius:99px;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:700}
-h1{color:#fff;font-size:clamp(44px,7vw,82px);line-height:.98;max-width:850px;margin:22px 0}.hero p{color:#e4e5e6;font-size:20px;max-width:700px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:15px 22px;border-radius:5px;text-decoration:none;font-weight:800;display:inline-block}.gold{background:var(--gold);color:#111}.outline{border:1px solid #fff;color:#fff}
-.trust{background:var(--gold);color:#111;padding:16px 22px}.trust-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-weight:800}
-section{padding:90px 22px}.wrap{max-width:1180px;margin:auto}.kicker{color:#a9853e;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800}.title{font-size:43px;line-height:1.08;margin:10px 0 14px}.lead{color:#656a70;max-width:720px;font-size:18px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.card{background:var(--card);color:#fff;padding:30px;border-radius:9px;border:1px solid rgba(201,170,97,.15);min-height:205px}.num{color:var(--gold2);font-weight:900;font-size:14px}.card h3{font-size:23px;margin:14px 0 9px}.card p{color:#c3c7ca;margin:0}
-.dark{background:var(--bg);color:#fff}.dark .lead{color:#bfc3c7}.split{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}.logo-box{background:#171b20;border:1px solid rgba(201,170,97,.3);padding:25px;border-radius:12px;text-align:center}.logo-box img{width:min(100%,430px);max-height:430px;object-fit:contain}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:35px}.stat{border-left:2px solid var(--gold);padding-left:18px}.stat strong{font-size:35px;color:var(--gold2);display:block}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:35px}.gallery img{width:100%;height:250px;object-fit:cover;border-radius:8px}.note{font-size:12px;color:#777;margin-top:12px}
-.contact{background:#f1f0ec}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:35px}.contact-card{background:#fff;padding:30px;border-radius:9px}.contact-card a{color:#17191c;font-weight:800}.big-wa{background:#17191c;color:#fff;text-decoration:none;display:block;text-align:center;padding:18px;border-radius:6px;font-weight:900;margin-top:20px}
-footer{background:#0d1013;color:#aeb2b6;padding:28px 22px}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-@media(max-width:800px){nav{display:none}.cards,.split,.contact-grid,.stats,.gallery{grid-template-columns:1fr}.hero{padding-top:130px}.title{font-size:35px}.hero p{font-size:18px}.gallery img{height:220px}.brand img{width:43px;height:43px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Construcciones BZ: especialistas en fachadas, SATE, fachadas ventiladas, monocapa, rehabilitación, reformas y obra nueva. Más de 22 años de experiencia. Barcelona y Tarragona.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#11151a">
+
+  <title>Construcciones BZ | Fachadas, SATE y Rehabilitación</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Construcciones BZ | Fachadas, SATE y Rehabilitación">
+  <meta property="og:description" content="Especialistas en fachadas, SATE, rehabilitación y obra nueva. Barcelona y Tarragona.">
+  <meta property="og:locale" content="es_ES">
+
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="dns-prefetch" href="//images.unsplash.com">
+
+  <style>
+    :root{
+      --bg:#11151a;
+      --bg2:#171c22;
+      --gold:#c9aa61;
+      --gold2:#e0c77e;
+      --white:#f8f8f5;
+      --text:#17191c;
+      --muted:#626970;
+      --line:#e7e7e4;
+      --card:#191e24;
+      --max:1180px;
+      --shadow:0 18px 50px rgba(0,0,0,.12);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:80px}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      background:#fff;
+      color:var(--text);
+      line-height:1.55;
+    }
+    img{max-width:100%;display:block}
+    a{color:inherit}
+    button{font:inherit}
+
+    header{
+      position:fixed;
+      top:0;left:0;right:0;
+      z-index:100;
+      background:rgba(17,21,26,.94);
+      backdrop-filter:blur(12px);
+      -webkit-backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(201,170,97,.18);
+    }
+    .nav{
+      max-width:var(--max);
+      margin:auto;
+      padding:10px 22px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      min-height:70px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:800;
+      min-width:0;
+    }
+    .brand img{
+      width:50px;height:50px;
+      object-fit:cover;
+      border-radius:50%;
+      flex:0 0 auto;
+    }
+    .brand span{
+      font-size:15px;
+      letter-spacing:1.5px;
+      white-space:nowrap;
+    }
+    .brand b{color:var(--gold)}
+
+    nav{
+      display:flex;
+      align-items:center;
+      gap:25px;
+    }
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      font-size:14px;
+      font-weight:700;
+    }
+    nav a:hover,nav a:focus{color:var(--gold2)}
+
+    .menu-btn{
+      display:none;
+      border:1px solid rgba(255,255,255,.25);
+      background:transparent;
+      color:#fff;
+      border-radius:6px;
+      padding:9px 11px;
+      cursor:pointer;
+    }
+
+    .hero{
+      min-height:100svh;
+      padding:155px 22px 90px;
+      display:flex;
+      align-items:center;
+      background:
+        linear-gradient(90deg,rgba(9,12,15,.96),rgba(9,12,15,.62)),
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=85")
+        center/cover;
+    }
+    .hero-inner{max-width:var(--max);width:100%;margin:auto}
+    .tag,.kicker{
+      color:var(--gold2);
+      text-transform:uppercase;
+      letter-spacing:2px;
+      font-size:12px;
+      font-weight:800;
+    }
+    .tag{
+      display:inline-block;
+      border:1px solid rgba(224,199,126,.45);
+      padding:8px 13px;
+      border-radius:99px;
+    }
+    h1{
+      color:#fff;
+      font-size:clamp(43px,7vw,82px);
+      line-height:.98;
+      letter-spacing:-2px;
+      max-width:850px;
+      margin:22px 0;
+    }
+    .hero p{
+      color:#e4e5e6;
+      font-size:20px;
+      max-width:700px;
+      margin:0;
+    }
+    .cta{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:30px;
+    }
+    .btn{
+      padding:15px 22px;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:800;
+      display:inline-block;
+      transition:transform .2s,opacity .2s;
+    }
+    .btn:hover{transform:translateY(-2px);opacity:.94}
+    .gold{background:var(--gold);color:#111}
+    .outline{border:1px solid #fff;color:#fff}
+
+    .trust{
+      background:var(--gold);
+      color:#111;
+      padding:16px 22px;
+    }
+    .trust-inner{
+      max-width:var(--max);
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+      font-weight:800;
+      font-size:14px;
+    }
+
+    section{padding:90px 22px}
+    .wrap{max-width:var(--max);margin:auto}
+    .title{
+      font-size:43px;
+      line-height:1.08;
+      letter-spacing:-1px;
+      margin:10px 0 14px;
+    }
+    .lead{
+      color:var(--muted);
+      max-width:760px;
+      font-size:18px;
+      margin:0;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-top:40px;
+    }
+    .card{
+      background:var(--card);
+      color:#fff;
+      padding:30px;
+      border-radius:9px;
+      border:1px solid rgba(201,170,97,.15);
+      min-height:205px;
+      box-shadow:0 12px 30px rgba(0,0,0,.06);
+    }
+    .num{color:var(--gold2);font-weight:900;font-size:14px}
+    .card h3{font-size:23px;margin:14px 0 9px}
+    .card p{color:#c3c7ca;margin:0}
+
+    .dark{background:var(--bg);color:#fff}
+    .dark .lead{color:#bfc3c7}
+    .split{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:55px;
+      align-items:center;
+    }
+    .logo-box{
+      background:#171b20;
+      border:1px solid rgba(201,170,97,.3);
+      padding:25px;
+      border-radius:12px;
+      text-align:center;
+    }
+    .logo-box img{
+      width:min(100%,430px);
+      max-height:430px;
+      object-fit:contain;
+      margin:auto;
+    }
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:25px;
+      margin-top:35px;
+    }
+    .stat{
+      border-left:2px solid var(--gold);
+      padding-left:18px;
+      color:#d5d7d9;
+    }
+    .stat strong{
+      font-size:35px;
+      color:var(--gold2);
+      display:block;
+      line-height:1.15;
+      margin-bottom:5px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin-top:35px;
+    }
+    .gallery figure{
+      margin:0;
+      overflow:hidden;
+      border-radius:8px;
+      background:#eee;
+    }
+    .gallery img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      transition:transform .35s;
+    }
+    .gallery figure:hover img{transform:scale(1.03)}
+    .note{font-size:12px;color:#777;margin-top:12px}
+
+    .contact{background:#f1f0ec}
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:25px;
+      margin-top:35px;
+    }
+    .contact-card{
+      background:#fff;
+      padding:30px;
+      border-radius:9px;
+      box-shadow:var(--shadow);
+    }
+    .contact-card h3{margin-top:0}
+    .contact-card a{
+      font-weight:800;
+      text-decoration-thickness:2px;
+      text-underline-offset:3px;
+    }
+    .big-wa{
+      background:#17191c;
+      color:#fff!important;
+      text-decoration:none!important;
+      display:block;
+      text-align:center;
+      padding:18px;
+      border-radius:6px;
+      font-weight:900;
+      margin-top:20px;
+    }
+
+    footer{
+      background:#0d1013;
+      color:#aeb2b6;
+      padding:28px 22px;
+    }
+    .footer-inner{
+      max-width:var(--max);
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      gap:15px;
+      flex-wrap:wrap;
+      font-size:14px;
+    }
+
+    .text-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:45px;
+      margin-top:55px;
+      padding-top:45px;
+      border-top:1px solid var(--line);
+    }
+    .text-grid h3{font-size:25px;margin:0 0 12px}
+    .text-grid p{color:#555d64;margin:0 0 14px}
+    .dark .text-grid{border-top-color:rgba(255,255,255,.12)}
+    .dark .text-grid h3{color:#fff}
+    .dark .text-grid p{color:#c6c9cc}
+
+    .media-section{background:#f7f6f3}
+    .media-grid{
+      display:grid;
+      grid-template-columns:1.35fr .65fr;
+      gap:22px;
+      margin-top:40px;
+      align-items:stretch;
+    }
+    .media-video{
+      background:#fff;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+    .video-poster{position:relative;min-height:390px;overflow:hidden}
+    .video-poster img,.video-poster video{width:100%;height:390px;object-fit:cover;display:block}
+@media (max-width:700px){
+  .video-poster video{height:auto;min-height:220px;max-height:70vh;object-fit:cover}
+  .video-poster{border-radius:16px;overflow:hidden}
+}
+    .video-overlay{
+      position:absolute;
+      inset:0;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:#fff;
+      background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.72));
+      padding:25px;
+    }
+    .video-overlay .play{
+      width:72px;height:72px;
+      display:grid;place-items:center;
+      border-radius:50%;
+      background:var(--gold);
+      color:#111;
+      font-size:27px;
+      padding-left:4px;
+      margin-bottom:16px;
+    }
+    .video-overlay strong{font-size:21px;letter-spacing:1px}
+    .video-overlay small{margin-top:5px;color:#eee}
+    .video-link{
+      position:absolute;
+      left:50%;
+      bottom:25px;
+      transform:translateX(-50%);
+      background:#fff;
+      color:#111;
+      text-decoration:none;
+      font-weight:900;
+      font-size:12px;
+      padding:12px 20px;
+      border-radius:5px;
+    }
+    .media-copy{padding:25px 28px 30px}
+    .media-copy h3{font-size:25px;margin:0 0 10px}
+    .media-copy p{color:#626970;margin:0 0 10px}
+    .source-note{font-size:12px!important;color:#777!important}
+    .featured-images{display:grid;grid-template-rows:1fr 1fr;gap:22px}
+    .featured-images figure{
+      margin:0;
+      position:relative;
+      min-height:184px;
+      overflow:hidden;
+      border-radius:12px;
+      background:#ddd;
+      box-shadow:var(--shadow);
+    }
+    .featured-images img{width:100%;height:100%;min-height:184px;object-fit:cover}
+    .featured-images figcaption{
+      position:absolute;
+      left:0;right:0;bottom:0;
+      padding:18px;
+      color:#fff;
+      font-weight:800;
+      background:linear-gradient(transparent,rgba(0,0,0,.72));
+    }
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+      margin-top:40px;
+    }
+    .step{
+      padding:26px;
+      border:1px solid var(--line);
+      border-radius:9px;
+      background:#fff;
+    }
+    .step span{
+      display:inline-block;
+      color:#a9853e;
+      font-weight:900;
+      font-size:13px;
+      margin-bottom:13px;
+    }
+    .step h3{font-size:21px;margin:0 0 10px}
+    .step p{color:#626970;margin:0}
+    .highlight{
+      margin-top:35px;
+      padding:34px;
+      border-radius:10px;
+      background:#f1f0ec;
+    }
+    .highlight h3{font-size:28px;margin:0 0 8px}
+    .highlight p{max-width:800px;color:#5e656b;margin:0 0 22px}
+
+    .faq{
+      margin-top:35px;
+      border-top:1px solid var(--line);
+    }
+    .faq details{
+      border-bottom:1px solid var(--line);
+      padding:0;
+    }
+    .faq summary{
+      cursor:pointer;
+      list-style:none;
+      padding:21px 42px 21px 0;
+      font-weight:800;
+      font-size:18px;
+      position:relative;
+    }
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary:after{
+      content:"+";
+      position:absolute;
+      right:4px;
+      top:17px;
+      font-size:25px;
+      font-weight:400;
+    }
+    .faq details[open] summary:after{content:"−"}
+    .faq details p{
+      color:#626970;
+      max-width:850px;
+      margin:0 0 22px;
+      padding-right:35px;
+    }
+
+    @media(max-width:800px){
+      .nav{min-height:64px;padding:8px 16px}
+      .brand img{width:43px;height:43px}
+      .brand span{font-size:13px;letter-spacing:1px}
+      .menu-btn{display:block}
+      nav{
+        display:none;
+        position:absolute;
+        top:64px;
+        left:0;right:0;
+        padding:12px 16px 18px;
+        background:rgba(17,21,26,.98);
+        border-bottom:1px solid rgba(201,170,97,.18);
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+      }
+      nav.open{display:flex}
+      nav a{padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.08)}
+      nav a:last-child{border-bottom:0}
+
+      .hero{padding:125px 20px 75px}
+      h1{font-size:clamp(42px,13vw,62px);letter-spacing:-1.5px}
+      .hero p{font-size:18px}
+      section{padding:72px 20px}
+      .title{font-size:35px}
+      .cards,.split,.contact-grid,.stats,.gallery{grid-template-columns:1fr}
+      .gallery img{height:230px}
+      .trust-inner{font-size:12px}
+      .cta .btn{width:100%;text-align:center}
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*:before,*:after{transition:none!important}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Construcciones BZ",
+    "description":"Especialistas en fachadas, SATE, fachadas ventiladas, monocapa, rehabilitación, reformas y obra nueva.",
+    "telephone":"+34617818595",
+    "email":"construcciones.bz7@gmail.com",
+    "areaServed":["Barcelona","Tarragona"],
+    "url":"https://rbrpkm4s4r-ship-it.github.io/-construccionesbz.github.io/"
+  }
+  </script>
 </head>
+
 <body>
-<header><div class="nav">
-<a class="brand" href="#"><img src="logo-bz.jpeg" alt="Logo Construcciones BZ"><span>CONSTRUCCIONES <b>BZ</b></span></a>
-<nav><a href="#servicios">Servicios</a><a href="#empresa">Empresa</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav>
-</div></header>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#inicio" aria-label="Construcciones BZ, inicio">
+        <img src="logo-bz.jpeg" alt="Logo de Construcciones BZ" width="50" height="50">
+        <span>CONSTRUCCIONES <b>BZ</b></span>
+      </a>
 
-<main>
-<section class="hero"><div class="hero-inner">
-<span class="tag">Especialistas en fachadas</span>
-<h1>Fachadas que transforman edificios.</h1>
-<p>Construcciones BZ ofrece soluciones profesionales de fachada, rehabilitación y obra nueva con más de 22 años de experiencia.</p>
-<div class="cta"><a class="btn gold" href="#contacto">SOLICITAR PRESUPUESTO</a><a class="btn outline" href="https://wa.me/34617818595?text=Hola%20Construcciones%20BZ,%20quiero%20solicitar%20un%20presupuesto." target="_blank">WHATSAPP</a></div>
-</div></section>
+      <button class="menu-btn" type="button" aria-label="Abrir menú" aria-controls="menu" aria-expanded="false">☰</button>
 
-<div class="trust"><div class="trust-inner"><span>+22 AÑOS DE EXPERIENCIA</span><span>SATE · FACHADAS · REHABILITACIÓN</span><span>BARCELONA · TARRAGONA</span></div></div>
+      <nav id="menu" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
-<section id="servicios"><div class="wrap">
-<div class="kicker">Lo que hacemos</div><h2 class="title">Soluciones para todo tipo de fachadas</h2><p class="lead">Desde rehabilitación y mantenimiento hasta obra nueva. Nos adaptamos a cada proyecto y a las necesidades de constructoras, empresas, comunidades y particulares.</p>
-<div class="cards">
-<div class="card"><span class="num">01</span><h3>SATE</h3><p>Aislamiento térmico exterior y renovación completa de fachadas.</p></div>
-<div class="card"><span class="num">02</span><h3>Fachadas ventiladas</h3><p>Sistemas y acabados para proyectos de nueva construcción y rehabilitación.</p></div>
-<div class="card"><span class="num">03</span><h3>Monocapa</h3><p>Aplicación de monocapa y acabados tradicionales con atención al detalle.</p></div>
-<div class="card"><span class="num">04</span><h3>Rehabilitación</h3><p>Saneado, reparación, revestimiento y mantenimiento integral.</p></div>
-<div class="card"><span class="num">05</span><h3>Obra nueva</h3><p>Ejecución de fachadas desde la preparación hasta el acabado final.</p></div>
-<div class="card"><span class="num">06</span><h3>Reformas</h3><p>Trabajos de construcción y reforma adaptados a cada proyecto.</p></div>
-</div></div></section>
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-inner">
+        <span class="tag">Especialistas en fachadas</span>
+        <h1>Fachadas que transforman edificios.</h1>
+        <p>Construcciones BZ ofrece soluciones profesionales de fachada, rehabilitación y obra nueva con más de 22 años de experiencia.</p>
 
-<section id="empresa" class="dark"><div class="wrap split">
-<div><div class="kicker">Construcciones BZ</div><h2 class="title">Experiencia, seriedad y acabados profesionales.</h2><p class="lead">Nuestra actividad está centrada especialmente en trabajos de fachada. Trabajamos para ofrecer una ejecución cuidada, buena coordinación en obra y soluciones adaptadas a cada cliente.</p>
-<div class="stats"><div class="stat"><strong>22+</strong>años de experiencia</div><div class="stat"><strong>Integral</strong>soluciones de fachada</div><div class="stat"><strong>BCN · TGN</strong>zona de trabajo</div></div></div>
-<div class="logo-box"><img src="logo-bz.jpeg" alt="Construcciones BZ"></div>
-</div></section>
+        <div class="cta">
+          <a class="btn gold" href="#contacto">SOLICITAR PRESUPUESTO</a>
+          <a class="btn outline" href="https://wa.me/34617818595?text=Hola%20Construcciones%20BZ,%20quiero%20solicitar%20un%20presupuesto." target="_blank" rel="noopener noreferrer">WHATSAPP</a>
+        </div>
+      </div>
+    </section>
 
-<section id="proyectos"><div class="wrap">
-<div class="kicker">Inspiración</div><h2 class="title">El tipo de proyectos que realizamos</h2><p class="lead">Estas fotografías son ilustrativas. Las sustituiremos por imágenes reales de tus obras cuando tengas material propio.</p>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85" alt="Edificio y fachada">
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85" alt="Construcción">
-<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=85" alt="Obra">
-<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=85" alt="Arquitectura">
-<img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1000&q=85" alt="Construcción exterior">
-<img src="https://images.unsplash.com/photo-1590479773265-7464e5d48118?auto=format&fit=crop&w=1000&q=85" alt="Rehabilitación">
-</div></div></section>
+    <div class="trust">
+      <div class="trust-inner">
+        <span>+22 AÑOS DE EXPERIENCIA</span>
+        <span>SATE · FACHADAS · REHABILITACIÓN</span>
+        <span>BARCELONA · TARRAGONA</span>
+      </div>
+    </div>
 
-<section id="contacto" class="contact"><div class="wrap">
-<div class="kicker">Hablemos de tu proyecto</div><h2 class="title">¿Necesitas una empresa para tu fachada?</h2><p class="lead">Envíanos los detalles de la obra y nos ponemos en contacto contigo.</p>
-<div class="contact-grid">
-<div class="contact-card"><h3>Construcciones BZ</h3><p>Especialistas en fachadas y rehabilitación.</p><p>📞 <a href="tel:+34617818595">617 818 595</a></p><p>✉️ <a href="mailto:construcciones.bz7@gmail.com">construcciones.bz7@gmail.com</a></p><p>📍 Barcelona y Tarragona</p></div>
-<div class="contact-card"><h3>Presupuesto</h3><p>Cuéntanos qué necesitas. Podemos valorar el trabajo y visitar la obra.</p><a class="big-wa" href="https://wa.me/34617818595?text=Hola%20Construcciones%20BZ,%20quiero%20solicitar%20un%20presupuesto." target="_blank">📲 PEDIR PRESUPUESTO POR WHATSAPP</a></div>
-</div></div></section>
-</main>
-<footer><div class="footer-inner"><span>© 2026 Construcciones BZ</span><span>Fachadas · SATE · Rehabilitación · Obra nueva</span></div></footer>
+    <section id="servicios">
+      <div class="wrap">
+        <div class="kicker">Lo que hacemos</div>
+        <h2 class="title">Soluciones profesionales para fachadas y construcción</h2>
+        <p class="lead">En Construcciones BZ trabajamos especialmente en proyectos relacionados con fachadas, rehabilitación y obra nueva. Estudiamos las necesidades de cada trabajo y planteamos una solución adaptada al tipo de edificio, al estado de la fachada y al acabado que se busca.</p>
+
+        <div class="cards">
+          <article class="card"><span class="num">01</span><h3>SATE</h3><p>Aislamiento térmico exterior y renovación completa de fachadas.</p></article>
+          <article class="card"><span class="num">02</span><h3>Fachadas ventiladas</h3><p>Sistemas y acabados para proyectos de nueva construcción y rehabilitación.</p></article>
+          <article class="card"><span class="num">03</span><h3>Monocapa</h3><p>Aplicación de monocapa y acabados tradicionales con atención al detalle.</p></article>
+          <article class="card"><span class="num">04</span><h3>Rehabilitación</h3><p>Saneado, reparación, revestimiento y mantenimiento integral.</p></article>
+          <article class="card"><span class="num">05</span><h3>Obra nueva</h3><p>Ejecución de fachadas desde la preparación hasta el acabado final.</p></article>
+          <article class="card"><span class="num">06</span><h3>Reformas</h3><p>Trabajos de construcción y reforma adaptados a cada proyecto.</p></article>
+        </div>
+
+        <div class="text-grid">
+          <div>
+            <h3>Una fachada no es solo un acabado</h3>
+            <p>La fachada forma parte esencial de la imagen y del estado general de un edificio. Por eso, un trabajo bien planteado debe tener en cuenta tanto el aspecto final como las características de la superficie y las necesidades concretas de la obra.</p>
+            <p>Nuestro trabajo abarca diferentes soluciones, desde sistemas SATE y fachadas ventiladas hasta monocapa, saneado, reparación, revestimiento y trabajos de obra nueva.</p>
+          </div>
+          <div>
+            <h3>Adaptación a cada proyecto</h3>
+            <p>No todos los edificios necesitan la misma intervención. Una rehabilitación, una obra nueva o una reforma requieren planteamientos diferentes. En Construcciones BZ ponemos el foco en entender el trabajo y adaptar la ejecución a las características de cada proyecto.</p>
+            <p>Trabajamos en <strong>Barcelona y Tarragona</strong>, atendiendo proyectos de constructoras, empresas, comunidades y particulares.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="empresa" class="dark">
+      <div class="wrap split">
+        <div>
+          <div class="kicker">Construcciones BZ</div>
+          <h2 class="title">Experiencia, seriedad y acabados profesionales.</h2>
+          <p class="lead">Nuestra actividad está centrada especialmente en trabajos de fachada. Con más de 22 años de experiencia, hemos desarrollado nuestra actividad alrededor de soluciones de rehabilitación, revestimiento, aislamiento, fachadas y obra nueva.</p>
+          <p>El objetivo es ofrecer una ejecución cuidada y una buena coordinación durante el trabajo, manteniendo una comunicación clara con el cliente y adaptando las soluciones a las características de cada proyecto.</p>
+          <p>Desde una actuación concreta hasta una intervención más completa, estudiamos el trabajo y ponemos nuestra experiencia al servicio del resultado final.</p>
+
+          <div class="stats">
+            <div class="stat"><strong>22+</strong>años de experiencia</div>
+            <div class="stat"><strong>Integral</strong>soluciones de fachada</div>
+            <div class="stat"><strong>BCN · TGN</strong>zona de trabajo</div>
+          </div>
+        </div>
+
+        <div class="logo-box">
+          <img src="logo-bz.jpeg" alt="Logotipo de Construcciones BZ" width="430" height="430" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso">
+      <div class="wrap">
+        <div class="kicker">Cómo trabajamos</div>
+        <h2 class="title">Un proyecto bien ejecutado empieza por entenderlo</h2>
+        <p class="lead">Cada obra tiene sus propias características. Por eso planteamos el trabajo de forma ordenada, desde la primera conversación hasta la ejecución y el acabado.</p>
+
+        <div class="steps">
+          <article class="step">
+            <span>01</span>
+            <h3>Escuchamos el proyecto</h3>
+            <p>Recogemos la información disponible sobre el edificio, la obra y las necesidades del cliente para entender qué se necesita realizar.</p>
+          </article>
+          <article class="step">
+            <span>02</span>
+            <h3>Valoramos la solución</h3>
+            <p>Analizamos el tipo de intervención y las diferentes posibilidades de trabajo según las características de la fachada o de la obra.</p>
+          </article>
+          <article class="step">
+            <span>03</span>
+            <h3>Organizamos la ejecución</h3>
+            <p>La coordinación y el orden durante los trabajos son fundamentales para avanzar de manera clara y cuidar cada fase del proyecto.</p>
+          </article>
+          <article class="step">
+            <span>04</span>
+            <h3>Cuidamos el acabado</h3>
+            <p>Prestamos atención a la fase final para que el resultado sea coherente con el proyecto y con el acabado previsto.</p>
+          </article>
+        </div>
+
+        <div class="highlight">
+          <h3>¿Qué tipo de trabajo necesitas?</h3>
+          <p>Si estás valorando una rehabilitación, una actuación en fachada, un sistema SATE, una fachada ventilada, un acabado monocapa, una reforma o una obra nueva, puedes ponerte en contacto con nosotros y explicarnos el proyecto.</p>
+          <a class="btn gold" href="#contacto">HABLAR SOBRE MI PROYECTO</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="multimedia" class="media-section">
+      <div class="wrap">
+        <div class="kicker">Imagen y vídeo</div>
+        <h2 class="title">Construcción, detalle y arquitectura</h2>
+        <p class="lead">Una presentación visual pensada para transmitir la seriedad, precisión y calidad que buscamos en cada proyecto.</p>
+
+        <div class="media-grid">
+          <div class="media-video">
+            <div class="video-poster">
+              <video
+                controls
+                playsinline
+                preload="metadata"
+                poster="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=88"
+                aria-label="Vídeo de fachada y arquitectura">
+                <source src="video-fachada.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este vídeo.
+              </video>
+            </div>
+            <div class="media-copy">
+              <h3>El trabajo detrás de cada proyecto</h3>
+              <p>La planificación, la coordinación y la ejecución forman parte del proceso de construcción. Hemos incorporado una pieza audiovisual de temática profesional para reforzar la presentación de la web.</p>
+              <p class="source-note">Vídeo de stock con licencia para uso comercial disponible en Mixkit. citeturn2view0</p>
+            </div>
+          </div>
+
+          <div class="featured-images">
+            <figure>
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=88"
+                   alt="Fachada moderna de un edificio"
+                   loading="lazy">
+              <figcaption>Arquitectura y fachadas contemporáneas</figcaption>
+            </figure>
+            <figure>
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=88"
+                   alt="Edificio y detalles de arquitectura"
+                   loading="lazy">
+              <figcaption>Diseño, estructura y acabados</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="wrap">
+        <div class="kicker">Proyectos</div>
+        <h2 class="title">Soluciones y trabajos de construcción</h2>
+        <p class="lead">Una selección visual de trabajos y soluciones relacionados con fachadas, rehabilitación, construcción y arquitectura. Cada proyecto requiere una planificación y una ejecución adaptadas a sus características.</p>
+
+        <div class="gallery">
+          <figure><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85" alt="Edificio y fachada" loading="lazy"></figure>
+          <figure><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85" alt="Trabajo de construcción" loading="lazy"></figure>
+          <figure><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=85" alt="Obra de construcción" loading="lazy"></figure>
+          <figure><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=85" alt="Arquitectura y construcción" loading="lazy"></figure>
+          <figure><img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1000&q=85" alt="Construcción exterior" loading="lazy"></figure>
+          <figure><img src="https://images.unsplash.com/photo-1590479773265-7464e5d48118?auto=format&fit=crop&w=1000&q=85" alt="Rehabilitación y obra" loading="lazy"></figure>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <section id="preguntas">
+      <div class="wrap">
+        <div class="kicker">Preguntas frecuentes</div>
+        <h2 class="title">Información antes de empezar</h2>
+        <p class="lead">Algunos de los puntos que pueden ayudarte a explicar tu proyecto cuando contactes con Construcciones BZ.</p>
+
+        <div class="faq">
+          <details>
+            <summary>¿Qué trabajos realiza Construcciones BZ?</summary>
+            <p>La actividad está especialmente orientada a fachadas, SATE, fachadas ventiladas, monocapa, rehabilitación, obra nueva y reformas.</p>
+          </details>
+          <details>
+            <summary>¿En qué zona trabajáis?</summary>
+            <p>La zona de trabajo indicada actualmente es Barcelona y Tarragona.</p>
+          </details>
+          <details>
+            <summary>¿Trabajáis con particulares y empresas?</summary>
+            <p>Sí. La web está orientada a proyectos de constructoras, empresas, comunidades y particulares.</p>
+          </details>
+          <details>
+            <summary>¿Cómo puedo pedir presupuesto?</summary>
+            <p>Puedes llamar al 617 818 595, escribir a construcciones.bz7@gmail.com o contactar directamente por WhatsApp desde los botones de esta página.</p>
+          </details>
+          <details>
+            <summary>¿Puedo enviar información o fotografías de la obra?</summary>
+            <p>Sí. Al contactar por WhatsApp puedes explicar el trabajo que necesitas y aportar la información que consideres útil para que podamos conocer mejor el proyecto.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <div class="wrap">
+        <div class="kicker">Hablemos de tu proyecto</div>
+        <h2 class="title">¿Necesitas una empresa para tu fachada?</h2>
+        <p class="lead">Envíanos los detalles de la obra y nos ponemos en contacto contigo.</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Construcciones BZ</h3>
+            <p>Especialistas en fachadas y rehabilitación.</p>
+            <p>📞 <a href="tel:+34617818595">617 818 595</a></p>
+            <p>✉️ <a href="mailto:construcciones.bz7@gmail.com">construcciones.bz7@gmail.com</a></p>
+            <p>📍 Barcelona y Tarragona</p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Presupuesto</h3>
+            <p>Cuéntanos qué necesitas. Podemos valorar el trabajo y visitar la obra.</p>
+            <a class="big-wa" href="https://wa.me/34617818595?text=Hola%20Construcciones%20BZ,%20quiero%20solicitar%20un%20presupuesto." target="_blank" rel="noopener noreferrer">📲 PEDIR PRESUPUESTO POR WHATSAPP</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 Construcciones BZ</span>
+      <span>Fachadas · SATE · Rehabilitación · Obra nueva</span>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('#menu');
+
+    menuBtn.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(open));
+      menuBtn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    });
+
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.setAttribute('aria-label', 'Abrir menú');
+      });
+    });
+  </script>
 </body>
 </html>
