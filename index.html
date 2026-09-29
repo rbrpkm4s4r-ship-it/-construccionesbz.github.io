@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rehabilitación de Fachadas, Aislamiento SATE y Comunidades en Barcelona y Tarragona | Construcciones BZ</title>
-    <meta name="description" content="Guía experta y servicios de rehabilitación de fachadas, aislamiento SATE, humedades, grietas y cumplimiento ITE en Barcelona, Tarragona, Segur de Calafell y Baix Penedès. Presupuesto gratis por WhatsApp.">
+    <title>Rehabilitación de Fachadas y SATE desde 1997 | Construcciones BZ</title>
+    <meta name="description" content="Empresa especialista en rehabilitación de fachadas, aislamiento SATE, humedades, grietas y comunidades en Barcelona, Tarragona, Segur de Calafell y Baix Penedès desde 1997. +60 proyectos. Presupuesto gratis.">
     <style>
         :root {
             --primary: #1e3a8a;
@@ -22,6 +22,7 @@
             line-height: 1.7;
             color: var(--text);
             background-color: var(--light);
+            padding-bottom: 70px; /* Espacio para barra fija móvil */
         }
         .top-bar {
             background: var(--dark);
@@ -91,6 +92,30 @@
             color: #92400e;
             font-weight: 500;
         }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2.5rem 0;
+            text-align: center;
+        }
+        .stat-box {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-top: 4px solid var(--secondary);
+        }
+        .stat-box h3 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 0.2rem;
+        }
+        .stat-box p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            color: #475569;
+            font-weight: bold;
+        }
         h2 {
             color: var(--primary);
             font-size: 2rem;
@@ -131,6 +156,38 @@
             border-color: var(--secondary);
         }
         .client-box h3 { color: var(--primary); margin-top: 0; }
+        
+        /* Zonas de cobertura */
+        .zones-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .zone-item {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        /* FAQ Estilo Profesional */
+        .faq-item {
+            background: #f8fafc;
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+        }
+        .faq-item h4 {
+            color: var(--primary);
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -170,6 +227,35 @@
             content: "✔ ";
             color: #16a34a;
         }
+        
+        /* Barra flotante inferior exclusiva para móviles */
+        .floating-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #ffffff;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.15);
+            padding: 0.8rem 1rem;
+            z-index: 1000;
+            text-align: center;
+        }
+        .floating-bar a {
+            background-color: var(--accent);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+        }
+        @media (max-width: 768px) {
+            .floating-bar { display: block; }
+        }
+
         footer {
             text-align: center;
             padding: 3.5rem 1rem;
@@ -182,33 +268,49 @@
 <body>
 
     <div class="top-bar">
-        ⚡ <span>VISITA Y DIAGNÓSTICO GRATUITO</span> en Barcelona, Tarragona, Segur de Calafell y Baix Penedès | 📞 Tel / WhatsApp: 617 81 85 95
+        ⚡ <span>VISITA Y DIAGNÓSTICO GRATUITO</span> en Barcelona, Tarragona y Baix Penedès | 📞 Tel / WhatsApp: 617 81 85 95
     </div>
 
     <header>
-        <h1>Especialistas en Rehabilitación de Fachadas, Aislamiento SATE y Comunidades en Barcelona y Tarragona</h1>
-        <p>Soluciones técnicas y comerciales definitivas para edificios y viviendas. Acabamos con las humedades, los desprendimientos estructurales, las grietas y la pérdida energética.</p>
+        <h1>Expertos en Rehabilitación de Fachadas y Aislamiento SATE desde 1997</h1>
+        <p>Más de dos décadas de experiencia y más de 60 proyectos realizados con éxito avalan nuestro compromiso. Soluciones definitivas para comunidades de vecinos y propietarios.</p>
         <a href="https://wa.me/34617818595?text=Hola,%20necesito%20un%20presupuesto%20gratis%20para%20mi%20fachada" class="whatsapp-btn" target="_blank">💬 Presupuesto Inmediato por WhatsApp</a>
     </header>
 
     <div class="container">
         
         <div class="card-commercial">
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h3>Desde 1997</h3>
+                    <p>Años de Experiencia en el Sector</p>
+                </div>
+                <div class="stat-box">
+                    <h3>+60</h3>
+                    <p>Proyectos Realizados con Éxito</p>
+                </div>
+                <div class="stat-box">
+                    <h3>100%</h3>
+                    <p>Compromiso y Garantía</p>
+                </div>
+            </div>
             
             <div class="alert-box">
-                ⚠️ ¿Tu comunidad de vecinos ha recibido un informe ITE desfavorable, notas manchas de humedad en los tabiques o se aprecian desprendimientos de cascotes en el edificio? No esperes a que los daños estructurales se agraven o sufras sanciones municipales. Te atendemos y diagnosticamos de inmediato en toda la provincia de Barcelona y Tarragona.
+                ⚠️ ¿Tu comunidad de vecinos ha recibido un informe ITE desfavorable, notas manchas de humedad en los tabiques o se aprecian desprendimientos de cascotes en el edificio? No esperes a que los daños estructurales se agraven o sufras sanciones municipales. Te atendemos y diagnosticamos de inmediato.
             </div>
 
-            <h2>La importancia de una rehabilitación profesional de fachadas en nuestra zona</h2>
-            <p>Vivir en la franja de Barcelona, Tarragona, el Baix Penedès y el Garraf expone a los edificios a un estrés ambiental muy severo. La combinación de una humedad ambiental constante, la brisa marina cargada de salitre, los fuertes vientos de la costa y los contrastes térmicos extremos del interior (inviernos muy fríos y veranos abrasadores) castiga sin tregua los revestimientos exteriores.</p>
+            <h2>Trayectoria y profesionalidad en la rehabilitación de fachadas</h2>
+            <p>Desde el año <strong>1997</strong>, en <strong>Construcciones BZ</strong> nos hemos consolidado como una empresa de referencia en la rehabilitación de edificios. Vivir en la franja de Barcelona, Tarragona, el Baix Penedès y el Garraf expone a los inmuebles a un estrés ambiental muy severo: humedad ambiental constante, brisa marina cargada de salitre, fuertes vientos y contrastes térmicos extremos.</p>
             
-            <p>Con el paso del tiempo, este desgaste natural genera patologías complejas que requieren la intervención de profesionales especializados. En <strong>Construcciones BZ</strong>, ofrecemos un servicio integral que abarca desde la consultoría técnica inicial hasta la ejecución de la obra con total garantía, eliminando intermediarios y asegurando un trato directo, transparente y enfocado a la máxima durabilidad.</p>
+            <p>Con <strong>más de 60 proyectos realizados</strong> a nuestras espaldas, conocemos a la perfección cada patología que puede sufrir un paramento exterior. Ofrecemos un servicio integral que abarca desde la consultoría técnica inicial hasta la ejecución de la obra con total garantía, eliminando intermediarios y asegurando un trato directo, transparente y enfocado a la máxima durabilidad.</p>
 
             <ul class="trust-list">
+                <li>Trayectoria desde 1997 en el sector</li>
+                <li>Más de 60 proyectos completados con éxito</li>
                 <li>Diagnóstico y Visita Técnica 100% Gratuita</li>
                 <li>Presupuesto Cerrado y Desglosado sin Sorpresas</li>
                 <li>Garantía Oficial por Escrito en todos los Trabajos</li>
-                <li>Gestión Integral de Licencias, Andamios y Vía Pública</li>
             </ul>
 
             <div class="client-types">
@@ -245,6 +347,35 @@
 
             <h3>3. Eliminación definitiva de humedades (Capilaridad y Filtraciones)</h3>
             <p>Las humedades de planta baja arruinan los paramentos y generan un ambiente insalubre. Mediante la perforación de los muros e inyección de silanos y siloxanos creamos una barrera impermeable horizontal que corta el ascenso del agua. En fachadas expuestas a lluvias laterales, aplicamos hidrófugos invisibles que repelen el agua de lluvia sin perder la transpirabilidad natural del muro.</p>
+
+            <h2>Zonas de Servicio Principal en Barcelona y Tarragona</h2>
+            <p>Nos desplazamos con rapidez a evaluar tu proyecto en toda la zona de costa e interior:</p>
+            <div class="zones-grid">
+                <div class="zone-item">Segur de Calafell</div>
+                <div class="zone-item">Calafell y Cunit</div>
+                <div class="zone-item">El Vendrell y Baix Penedès</div>
+                <div class="zone-item">Vilanova i la Geltrú</div>
+                <div class="zone-item">Sitges y Garraf</div>
+                <div class="zone-item">Provincia de Tarragona</div>
+                <div class="zone-item">Provincia de Barcelona</div>
+            </div>
+
+            <h2>Preguntas Frecuentes (FAQ) de nuestros clientes</h2>
+            
+            <div class="faq-item">
+                <h4>¿La visita y el diagnóstico previo de la fachada tienen algún coste?</h4>
+                <p>No, en Construcciones BZ nos desplazamos a ver tu edificio o vivienda de manera totalmente gratuita y sin ningún tipo de compromiso para evaluar las patologías.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>¿Ayudáis con la tramitación de permisos y licencias de obra?</h4>
+                <p>Sí. Nos encargamos de todo el proceso técnico y burocrático ante el ayuntamiento correspondiente, incluyendo la solicitud de licencias y permisos de andamios u ocupación de vía pública.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>¿Ofrecéis garantía por escrito en vuestros trabajos?</h4>
+                <p>Absolutamente. Todos nuestros trabajos de rehabilitación de fachadas, SATE y reparaciones estructurales cuentan con su correspondiente garantía oficial por escrito.</p>
+            </div>
 
             <h2>Guía de Precios Orientativos y Planificación</h2>
             <p>Comprendemos que cada proyecto es único y requiere un estudio personalizado de los metros cuadrados, la accesibilidad (andamios o trabajos verticales), la altura del edificio y el estado del soporte. No obstante, trabajamos con total transparencia en nuestras tarifas y partidas:</p>
@@ -287,8 +418,13 @@
 
     </div>
 
+    <!-- Barra flotante fija para que en el móvil siempre tengan el WhatsApp a mano -->
+    <div class="floating-bar">
+        <a href="https://wa.me/34617818595?text=Hola,%20necesito%20presupuesto%20gratis%20para%20mi%20fachada" target="_blank">💬 Presupuesto Inmediato por WhatsApp</a>
+    </div>
+
     <footer>
-        <p>&copy; 2026 Construcciones BZ - Expertos en Rehabilitación de Fachadas, Aislamiento SATE y Comunidades en Barcelona y Tarragona.<br>
+        <p>&copy; 2026 Construcciones BZ - Expertos en Rehabilitación de Fachadas desde 1997 (+60 proyectos realizados) en Barcelona y Tarragona.<br>
         📧 Email: construcciones.bz7@gmail.com | 📱 Teléfono y WhatsApp Directo: 617 81 85 95</p>
     </footer>
 
