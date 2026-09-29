@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rehabilitación de Fachadas y Aislamiento SATE en Barcelona y Tarragona | Construcciones BZ</title>
-    <meta name="description" content="Empresa especialista en rehabilitación de fachadas, aislamiento SATE, humedades y comunidades de vecinos en Barcelona, Tarragona y provincia. Presupuesto gratis por WhatsApp.">
+    <meta name="description" content="Empresa especialista en rehabilitación de fachadas, aislamiento SATE, humedades, grietas y comunidades de vecinos en Barcelona, Tarragona, Segur de Calafell y Baix Penedès. Presupuesto y visita gratis.">
     <style>
         :root {
             --primary: #1e3a8a;
@@ -13,6 +13,8 @@
             --dark: #0f172a;
             --light: #f8fafc;
             --text: #334155;
+            --warning-bg: #fef3c7;
+            --warning-border: #f59e0b;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -21,27 +23,31 @@
             color: var(--text);
             background-color: var(--light);
         }
-        /* Top bar */
+        /* Top bar urgencia */
         .top-bar {
             background: var(--dark);
             color: white;
-            padding: 0.5rem 1rem;
+            padding: 0.6rem 1rem;
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            font-weight: 500;
         }
-        /* Header / Hero */
+        .top-bar span { color: #4ade80; }
+
+        /* Hero comercial */
         header {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
             text-align: center;
-            padding: 4rem 1rem;
+            padding: 4.5rem 1rem 3.5rem 1rem;
         }
         header h1 {
-            font-size: 2.3rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
             max-width: 900px;
             margin-left: auto;
             margin-right: auto;
+            line-height: 1.2;
         }
         header p {
             font-size: 1.2rem;
@@ -49,64 +55,106 @@
             max-width: 750px;
             margin: 0 auto 2rem auto;
         }
-        /* Botón WhatsApp */
+        
+        /* Botones de conversión masiva */
         .whatsapp-btn {
             display: inline-block;
             background-color: var(--accent);
             color: white;
             font-weight: bold;
             text-decoration: none;
-            padding: 1rem 2rem;
+            padding: 1.1rem 2.2rem;
             border-radius: 50px;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            transition: transform 0.2s;
+            font-size: 1.2rem;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        .whatsapp-btn:hover { transform: scale(1.05); }
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
         
-        /* Contenedor principal */
         .container {
             max-width: 1000px;
-            margin: -3rem auto 3rem auto;
+            margin: -2.5rem auto 3rem auto;
             padding: 0 1rem;
             position: relative;
         }
-        .card-main {
+        
+        /* Tarjetas de contenido comercial */
+        .card-commercial {
             background: white;
             padding: 2.5rem;
-            border-radius: 10px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
             margin-bottom: 2rem;
         }
+        
+        .alert-box {
+            background-color: var(--warning-bg);
+            border-left: 6px solid var(--warning-border);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+            color: #92400e;
+            font-weight: 500;
+        }
+
         h2 {
             color: var(--primary);
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             margin-bottom: 1.2rem;
+            margin-top: 1.5rem;
             border-bottom: 2px solid #e2e8f0;
             padding-bottom: 0.4rem;
         }
-        p { margin-bottom: 1rem; }
-        
-        /* Grid de servicios */
-        .services-grid {
+        h2:first-of-type { margin-top: 0; }
+        h3 {
+            color: var(--dark);
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p { margin-bottom: 1.1rem; }
+
+        /* Grid de conversión por tipo de cliente */
+        .client-types {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
-            margin-top: 1.5rem;
+            margin: 2rem 0;
         }
-        .service-box {
+        .client-box {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: border-color 0.2s;
+        }
+        .client-box:hover {
+            border-color: var(--secondary);
+        }
+        .client-box h3 { color: var(--primary); margin-top: 0; }
+
+        /* Servicios visuales */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.2rem;
+            margin: 1.5rem 0;
+        }
+        .service-item {
             background: #f1f5f9;
-            padding: 1.5rem;
+            padding: 1.2rem;
             border-radius: 8px;
             border-left: 4px solid var(--secondary);
+            font-size: 0.95rem;
         }
-        .service-box h3 {
-            color: var(--dark);
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        /* Tabla de precios orientativos estilo web profesional */
+        .service-item strong { display: block; color: var(--primary); margin-bottom: 0.3rem; font-size: 1.05rem; }
+
+        /* Tabla de transparencia comercial */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -121,98 +169,142 @@
             background-color: #f1f5f9;
             color: var(--primary);
         }
-        
-        /* CTA Sección Inferior */
-        .cta-section {
-            background: #eff6ff;
-            border: 2px solid #bfdbfe;
-            padding: 2.5rem;
-            border-radius: 10px;
+
+        /* Bloque de Cierre de Venta (CTA) */
+        .cta-final {
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+            border: 3px solid var(--secondary);
+            padding: 3rem 2rem;
+            border-radius: 12px;
             text-align: center;
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
-        
+        .cta-final h2 { border: none; color: var(--primary); margin-top: 0; }
+
+        /* Trust badges (Garantías) */
+        .trust-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+            font-weight: bold;
+            color: var(--dark);
+        }
+        .trust-list li::before {
+            content: "✔ ";
+            color: #16a34a;
+        }
+
         footer {
             text-align: center;
-            padding: 2.5rem 1rem;
+            padding: 3rem 1rem;
             background: var(--dark);
             color: white;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
     </style>
 </head>
 <body>
 
     <div class="top-bar">
-        📍 Servicio profesional en Barcelona, Tarragona, Baix Penedès y comarcas | ✉️ construcciones.bz7@gmail.com
+        ⚡ <span>VISITA Y DIAGNÓSTICO GRATUITO</span> en Barcelona, Tarragona y Baix Penedès | 📞 Tel / WhatsApp: 617 81 85 95
     </div>
 
     <header>
-        <h1>Rehabilitación y Reformas de Fachadas en Barcelona y Tarragona</h1>
-        <p>Expertos en saneamiento, aislamiento SATE, eliminación de humedades y gestión integral para comunidades de vecinos y particulares.</p>
-        <a href="https://wa.me/34617818595?text=Hola,%20necesito%20presupuesto%20para%20rehabilitar%20una%20fachada" class="whatsapp-btn" target="_blank">📲 Pedir Presupuesto Gratis por WhatsApp</a>
+        <h1>Especialistas en Rehabilitación de Fachadas y Aislamiento SATE</h1>
+        <p>Soluciones definitivas para comunidades de vecinos y propietarios. Acabamos con las humedades, los desprendimientos y el frío desatado en tu hogar.</p>
+        <a href="https://wa.me/34617818595?text=Hola,%20necesito%20un%20presupuesto%20gratis%20para%20mi%20fachada" class="whatsapp-btn" target="_blank">💬 Presupuesto Inmediato por WhatsApp</a>
     </header>
 
     <div class="container">
         
-        <div class="card-main">
-            <h2>Especialistas en la Recuperación de Edificios</h2>
-            <p>El clima de la costa de Barcelona y Tarragona —marcado por la humedad, los cambios térmicos y la brisa marina— deteriora los revestimientos exteriores. En <strong>Construcciones BZ</strong> ofrecemos soluciones duraderas para revalorizar tu propiedad y garantizar la seguridad estructural.</p>
+        <div class="card-commercial">
             
-            <div class="services-grid">
-                <div class="service-box">
-                    <h3>🏢 Comunidades e ITE</h3>
-                    <p>Reparación de desprendimientos, cantoneras de balcones, pasivación de hierros y trabajos para superar la Inspección Técnica de Edificios.</p>
+            <div class="alert-box">
+                ⚠️ ¿Tu edificio ha recibido un informe ITE desfavorable o notas humedades y grietas en casa? No esperes a que los daños vayan a más. Te atendemos hoy mismo.
+            </div>
+
+            <h2>¿Por qué confiar en Construcciones BZ?</h2>
+            <p>Conocemos a la perfección las patologías que provoca el clima de nuestra costa e interior (humedad ambiental, salitre, fuertes vientos y contrastes térmicos). Ofrecemos un servicio directo, transparente y sin intermediarios para garantizar la máxima calidad al mejor precio.</p>
+
+            <ul class="trust-list">
+                <li>Diagnóstico y Visita 100% Gratuita</li>
+                <li>Presupuesto Cerrado sin Sorpresas</li>
+                <li>Garantía Oficial por Escrito</li>
+                <li>Gestión Integral de Permisos y Andamios</li>
+            </ul>
+
+            <div class="client-types">
+                <div class="client-box">
+                    <h3>🏢 Comunidades de Vecinos</h3>
+                    <p>Especialistas en administradores de fincas. Saneamiento de balcones, pasivación de hierros, desprendimientos y superación de la ITE con andamios o trabajos verticales.</p>
+                    <a href="https://wa.me/34617818595?text=Hola,%20soy%20administrador/vecino%20y%20necesito%20presupuesto%20para%20una%20comunidad" class="whatsapp-btn" style="font-size: 0.95rem; padding: 0.7rem 1.2rem; margin-top: 1rem;" target="_blank">Presupuesto Comunidad</a>
                 </div>
-                <div class="service-box">
-                    <h3>🌡️ Aislamiento SATE</h3>
-                    <p>Sistemas de aislamiento térmico exterior para ahorrar hasta un 40% en climatización y eliminar puentes térmicos y condensaciones.</p>
-                </div>
-                <div class="service-box">
-                    <h3>💧 Humedades y Grietas</h3>
-                    <p>Tratamientos contra capilaridad, filtraciones de agua de lluvia y cosido estructural de grietas con barras de acero inoxidable.</p>
-                </div>
-                <div class="service-box">
-                    <h3>🎨 Pintura y Revestimientos</h3>
-                    <p>Limpieza a presión, imprimaciones y aplicación de pinturas siloxánicas o acrílicas autolavables de alta resistencia.</p>
+                <div class="client-box">
+                    <h3>🏠 Casas Unifamiliares y Chalets</h3>
+                    <p>Eliminación total de humedades por capilaridad, filtraciones de lluvia, cosido estructural de grietas y aplicación de pinturas siloxánicas autolavables.</p>
+                    <a href="https://wa.me/34617818595?text=Hola,%20tengo%20una%20casa%20unifamiliar%20y%20necesito%20presupuesto" class="whatsapp-btn" style="font-size: 0.95rem; padding: 0.7rem 1.2rem; margin-top: 1rem;" target="_blank">Presupuesto Casa</a>
                 </div>
             </div>
-        </div>
 
-        <div class="card-main">
-            <h2>Precios Orientativos de Trabajos en Fachadas</h2>
-            <p>Los costes varían según los metros cuadrados, la altura del edificio y el estado del soporte. Como referencia general en el sector:</p>
+            <h2>Nuestros Servicios Principales</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <strong>SATE y Fachadas Ventiladas</strong>
+                    Aislamiento térmico exterior para ahorrar hasta un 40% en calefacción y aire acondicionado.
+                </div>
+                <div class="service-item">
+                    <strong>Reparación de Grietas</strong>
+                    Grapado estructural con acero inoxidable y sellado elástico definitivo.
+                </div>
+                <div class="service-item">
+                    <strong>Eliminación de Humedades</strong>
+                    Inyecciones químicas antihumedad y morteros transpirables.
+                </div>
+                <div class="service-item">
+                    <strong>Pinturas y Revestimientos</strong>
+                    Revestimientos acrílicos y siloxánicos de máxima resistencia contra la intemperie.
+                </div>
+            </div>
+
+            <h2>Transparencia en Precios y Tipos de Obra</h2>
+            <p>Cada fachada es única, por lo que analizamos los metros cuadrados, la altura y el estado del soporte antes de dar el precio definitivo, pero trabajamos con los estándares más competitivos del mercado en Barcelona y Tarragona:</p>
+            
             <table>
                 <tr>
-                    <th>Tipo de Intervención</th>
-                    <th>Descripción estimada</th>
+                    <th>Servicio / Solución</th>
+                    <th>Ideal para...</th>
                 </tr>
                 <tr>
-                    <td><strong>Limpieza y Pintura</strong></td>
-                    <td>Lavado a presión + revestimiento protector</td>
+                    <td><strong>Limpieza y Pintura Exterior</strong></td>
+                    <td>Renovar la estética y proteger muros saneados.</td>
                 </tr>
                 <tr>
-                    <td><strong>Reparación de Saneamiento</strong></td>
-                    <td>Picado de zonas sueltas y morteros de restauración</td>
+                    <td><strong>Saneamiento de Estructura y Balcones</strong></td>
+                    <td>Eliminar peligro de caídas y cumplir la ITE.</td>
                 </tr>
                 <tr>
-                    <td><strong>Aislamiento SATE</strong></td>
-                    <td>Colocación de paneles aislantes y acabado exterior</td>
+                    <td><strong>Instalación de Sistema SATE</strong></td>
+                    <td>Ahorro energético drástico y confort térmico total.</td>
                 </tr>
             </table>
-            <p style="font-size: 0.9rem; color: #64748b;">*Para ofrecerte un precio exacto y cerrado, realizamos una visita técnica y valoración gratuita sin compromiso en Barcelona y Tarragona.</p>
-        </div>
 
-        <div class="cta-section">
-            <h2>¿Hablamos de tu proyecto?</h2>
-            <p>Escríbenos directamente por WhatsApp con los detalles o fotos de la fachada. Te responderemos al instante.</p>
-            <a href="https://wa.me/34617818595?text=Hola,%20quiero%20consultaros%20sobre%20un%20trabajo%20en%20fachada" class="whatsapp-btn" target="_blank">📲 Abrir Chat de WhatsApp Directo</a>
+            <div class="cta-final">
+                <h2>¿Hablamos de tu proyecto ahora mismo?</h2>
+                <p>Mándanos un mensaje rápido por WhatsApp con unas fotos de la fachada o explícanos qué le pasa a tu edificio. Te atenderemos al instante.</p>
+                <a href="https://wa.me/34617818595?text=Hola,%20quiero%20consultaros%20sobre%20un%20trabajo%20en%20fachada" class="whatsapp-btn" target="_blank">💬 Abrir Chat de WhatsApp (617 81 85 95)</a>
+            </div>
+
         </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 Construcciones BZ - Expertos en Fachadas en Barcelona y Tarragona | Contacto: construcciones.bz7@gmail.com</p>
+        <p>&copy; 2026 Construcciones BZ - Expertos en Rehabilitación de Fachadas en Barcelona y Tarragona.<br>
+        📧 Email: construcciones.bz7@gmail.com | 📱 Teléfono y WhatsApp: 617 81 85 95</p>
     </footer>
 
 </body>
